@@ -24,9 +24,9 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-6 font-medium text-sm md:text-base">
-          <Link className="hover:opacity-70 transition" href="#">Image Resizer</Link>
-          <Link className="hover:opacity-70 transition" href="#">Compressor</Link>
-          <Link className="hover:opacity-70 transition" href="#">Format Converter</Link>
+          <Link className="hover:opacity-70 transition" href="/resize">Image Resizer</Link>
+          <Link className="hover:opacity-70 transition" href="/compress">Compressor</Link>
+          <Link className="hover:opacity-70 transition" href="/convert">Format Converter</Link>
           <Link className="hover:opacity-70 transition" href="#">More</Link>
         </div>
 
