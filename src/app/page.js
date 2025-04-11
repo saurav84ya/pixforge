@@ -28,7 +28,7 @@ export default function Home() {
 
         {/* Image */}
         <div className="flex-1">
-          <Image src={heroImage} alt="Image Tools Preview" className="w-full max-w-md mx-auto" />
+          <Image src={heroImage} alt="Image Tools Preview" className="w-full rounded-2xl max-w-md mx-auto" />
         </div>
       </section>
 

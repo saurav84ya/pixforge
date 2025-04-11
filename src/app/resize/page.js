@@ -44,7 +44,7 @@ export default function ImageResizerPage() {
 
   return (
     <div className=" flex flex-col text-gray-800">
-      <main className="flex-grow min-h-screen px-4 py-10 flex flex-col justify-center items-center gap-6">
+      <main className="flex-grow min-h-screen px-4 py-10 flex flex-col mt-5 md:mt-10   items-center gap-6">
         <h2 className="text-3xl font-bold text-center">Image Resizer Tool</h2>
         <ImageInput file={file} setFile={setFile} />
 

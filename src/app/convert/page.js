@@ -39,8 +39,8 @@ export default function ImageConverterPage() {
   }
 
   return (
-    <div className=" flex flex-col bg-gray-50 text-gray-800">
-      <main className="flex-grow px-4 py-10 flex flex-col min-h-screen justify-center items-center gap-6">
+    <div className=" flex flex-col  text-gray-800">
+      <main className="flex-grow px-4 py-10 flex flex-col min-h-screen mt-5 md:mt-10   items-center gap-6">
         <h2 className="text-3xl font-bold text-center">Image Format Converter</h2>
         <ImageInput file={file} setFile={setFile} />
 
