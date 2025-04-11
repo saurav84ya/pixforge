@@ -27,7 +27,6 @@ export default function Navbar() {
           <Link className="hover:opacity-70 transition" href="/resize">Image Resizer</Link>
           <Link className="hover:opacity-70 transition" href="/compress">Compressor</Link>
           <Link className="hover:opacity-70 transition" href="/convert">Format Converter</Link>
-          <Link className="hover:opacity-70 transition" href="#">More</Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -43,10 +42,9 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {open && (
         <div className="md:hidden mt-4 flex flex-col gap-4 font-medium text-sm bg-gray-100 p-4 rounded-md shadow-inner animate-fade-in">
-          <Link onClick={() => setOpen(false)} href="#">Image Resizer</Link>
-          <Link onClick={() => setOpen(false)} href="#">Compressor</Link>
-          <Link onClick={() => setOpen(false)} href="#">Format Converter</Link>
-          <Link onClick={() => setOpen(false)} href="#">More</Link>
+          <Link onClick={() => setOpen(false)} href="/resize">Image Resizer</Link>
+          <Link onClick={() => setOpen(false)} href="/compress">Compressor</Link>
+          <Link onClick={() => setOpen(false)} href="/convert">Format Converter</Link>
         </div>
       )}
     </nav>

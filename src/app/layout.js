@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { ToastContainer } from "react-toastify";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +26,32 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className=" max-w-[1024px] mx-auto  " >
+        <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
+
         <Navbar/>
         {children}
+        <footer className="mt-20 text-center text-sm text-gray-500 bg-white py-6 px-6">
+  <p className="mb-3 text-gray-400">
+    Images are uploaded securely, never shared with 3rd parties, and deleted permanently once 
+    the download link expires (after 24 hours).
+  </p>
+  <p className="mb-2 text-gray-500">
+    © {new Date().getFullYear()} PixForge. All rights reserved.
+  </p>
+  <p>
+    Made with ❤️ by Saurav •{' '}
+    <a
+      href="https://github.com/yourusername"
+      className="text-blue-500 hover:underline"
+    >
+      GitHub
+    </a>
+  </p>
+</footer>
+
         </div>
       </body>
     </html>

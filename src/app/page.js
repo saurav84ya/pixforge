@@ -1,31 +1,3 @@
-// import ImageInpute from "@/components/ImageInput";
-
-// export default function Home() {
-//   return (
-//     <div className="h-screen flex flex-col items-center justify-center " >
-
-
-//       <h1 className="text-3xl font-bold mb-6">Image Converter Online</h1>
-
-
-//       <div>
-//         <ImageInpute />
-//         <div>
-//           <p className='opacity-70 text-sm text-center mt-5 ' >Images are uploaded securely, <br />
-//             never shared with 3rd parties, <br />
-//             and deleted permanently once <br />
-//             the download link expires <br />
-//             (after 24 hours)</p>
-//         </div>
-//         <div>
-//           <h1>Select Action to Perfrom</h1>
-
-//         </div>
-//       </div>
-
-//     </div>
-//   );
-// }
 
 
 
@@ -85,20 +57,10 @@ export default function Home() {
         </div>
       </section>
 
-      <div>
-     
-      </div>
 
       {/* Footer */}
-      <footer className="text-center text-gray-400 mt-20 text-sm">
-      <p className='text-sm text-center mb-3 ' >Images are uploaded securely, 
-             never shared with 3rd parties, 
-             and deleted permanently once 
-             the download link expires 
-            (after 24 hours)</p>
 
-        © {new Date().getFullYear()} PixForge. All rights reserved.
-      </footer>
+      
     </main>
   )
 }
