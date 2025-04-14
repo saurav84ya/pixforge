@@ -20,12 +20,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className=" max-w-[1024px] mx-auto bg-gradient-to-br from-gray-50 to-green-50  " >
+        <div className=" max-w-[1024px] mx-auto   " >
           <Toaster
             position="top-center"
             reverseOrder={false}
@@ -57,3 +59,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
