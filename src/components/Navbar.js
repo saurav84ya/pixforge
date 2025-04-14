@@ -39,9 +39,11 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu Dropdown with Animation */}
       {open && (
-        <div className="md:hidden mt-4 flex flex-col gap-4 font-medium text-sm bg-gray-100 p-4 rounded-md shadow-inner animate-fade-in">
+        <div
+          className="md:hidden mt-4 flex flex-col gap-4 font-medium text-sm bg-gray-100 p-4 rounded-md shadow-inner animate-fade-in menu-enter"
+        >
           <Link onClick={() => setOpen(false)} href="/resize">Image Resizer</Link>
           <Link onClick={() => setOpen(false)} href="/compress">Compressor</Link>
           <Link onClick={() => setOpen(false)} href="/convert">Format Converter</Link>
