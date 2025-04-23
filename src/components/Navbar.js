@@ -26,10 +26,6 @@ export default function Navbar() {
         <div className="hidden md:flex gap-6 font-medium text-sm  md:text-base">
           <Link className="hover:opacity-70 transition" href="/resize">Image Resizer</Link>
           <Link className="hover:opacity-70 transition" href="/compress">Compressor</Link>
-        <button class="bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-  Click Me 🌼
-</button>
-
           <Link className="hover:opacity-70 transition" href="/convert">Format Converter</Link>
         </div>
 
